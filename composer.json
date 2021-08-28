@@ -1,0 +1,27 @@
+{
+    "name": "rifat/simple-faq",
+    "description": "An FAQ page and FAQ modifier for any product's website.",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Rifat\\SimpleFaq\\": "src/",
+            "Rifat\\SimpleFaq\\Database\\Factories\\": "database/factories/"
+        }
+    },
+    "authors": [
+        {
+            "name": "RHRiday",
+            "email": "riffatriday@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Rifat\\SimpleFaq\\Providers\\FaqServiceProvider"
+            ]
+        }
+    }
+}
