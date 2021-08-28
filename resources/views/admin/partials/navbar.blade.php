@@ -11,10 +11,10 @@
 
     <ul class="nav navbar-top-links navbar-right">
         <li class="nav-item">
-            <form id="logout-form" action="/logout" method="POST" hidden>
-                @csrf
+            <form id="logout-form" action="{{route('logout')}}" method="POST" hidden>
+                {{ csrf_field() }}
             </form>
-            <a href="/logout"  onclick="event.preventDefault();
+            <a href="{{route('logout')}}"  onclick="event.preventDefault();
                                     document.getElementById('logout-form').submit();"
                         class="nav-link text-danger">Logout
                         <i class="fas fa-sign-out-alt"></i>

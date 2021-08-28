@@ -6,6 +6,7 @@ use Rifat\SimpleFaq\Http\Controllers\View\ViewController;
 
 Route::group([
     'prefix' => 'faq',
+    'middleware' => 'web',
 ], function () {
     Route::get('/', [ViewController::class, 'index']);
     Route::get('/home', [FaqController::class, 'index']);
